@@ -5,8 +5,8 @@
 # catalog-license gfsl
 # catalog-version 2.004
 Name:		texlive-tex-gyre
-Version:	2.004
-Release:	12
+Version:	2.501
+Release:	1
 Summary:	TeX Fonts extending freely available URW fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/tex-gyre
