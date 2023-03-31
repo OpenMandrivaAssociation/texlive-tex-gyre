@@ -1,6 +1,6 @@
 Name:		texlive-tex-gyre
 Version:	48058
-Release:	1
+Release:	2
 Summary:	TeX Fonts extending freely available URW fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/tex-gyre
