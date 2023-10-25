@@ -1,5 +1,5 @@
 Name:		texlive-tex-gyre
-Version:	67718
+Version:	68624
 Release:	1
 Summary:	TeX Fonts extending freely available URW fonts
 Group:		Publishing
