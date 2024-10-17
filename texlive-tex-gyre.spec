@@ -3,7 +3,7 @@ Version:	68624
 Release:	1
 Summary:	TeX Fonts extending freely available URW fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/tex-gyre
+URL:		https://www.ctan.org/tex-archive/fonts/tex-gyre
 License:	GFSL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-gyre.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-gyre.doc.r%{version}.tar.xz
