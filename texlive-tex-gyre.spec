@@ -1,9 +1,10 @@
 %global tl_name tex-gyre
 %global tl_revision 68624
+%global tl_version 2.501
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	2.501
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	TeX Fonts extending freely available URW fonts
 Group:		Publishing
@@ -14,7 +15,8 @@ Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-gyre.doc.r%{
 Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/tex-gyre.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The TeX-GYRE bundle consists of six font families: TeX Gyre Adventor is
@@ -41,3 +43,17 @@ provided. Vietnamese characters were added by Han The Thanh. There are
 companion maths fonts for several of these designs, listed in the TeX
 Gyre Math package.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from tex-gyre:
+Map qag.map
+Map qbk.map
+Map qcr.map
+Map qcs.map
+Map qhv.map
+Map qpl.map
+Map qtm.map
+Map qzc.map
+TL_DROPIN_EOF
